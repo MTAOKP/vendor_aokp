@@ -7,18 +7,11 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
 include vendor/aokp/configs/themes_common.mk
 
 PRODUCT_PACKAGES += \
-    AOKPtips \
     AppWidgetPicker \
     LatinImeDictionary \
-    Microbes \
-    MusicFX \
     MusicVisualization \
-    NoiseField \
-    PhaseBeam \
     ROMControl \
-    SuperSU \
-    SwagPapers \
-    UnicornPorn
+    SuperSU
 
 # Use prebuilt su until fixed when built
 PRODUCT_COPY_FILES += \
@@ -66,9 +59,9 @@ PRODUCT_PACKAGES += \
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Scarabaeus.ogg \
-    ro.config.notification_sound=Antimony.ogg \
-    ro.config.alarm_alert=Scandium.ogg
+    ro.config.ringtone=CyanTone.ogg \
+    ro.config.notification_sound=CyanPing.ogg \
+    ro.config.alarm_alert=CyanAlarm.ogg
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
